@@ -3,6 +3,7 @@ const validations = require('./src/validations')
 
 const app = express()
 const server = app.listen(8080, () => console.log('Server Up'))
+
 app.use(express.json())
 
 app.post('/users', (req, res) => {
